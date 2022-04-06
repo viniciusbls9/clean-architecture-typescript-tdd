@@ -3,6 +3,7 @@
     "baseUrl": "src",
     "rootDir": "src",
     "esModuleInterop": true,
+    "moduleResolution": "Node",
     "paths": {
       "@/*": ["*"]
     }
