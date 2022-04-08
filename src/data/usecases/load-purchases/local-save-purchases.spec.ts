@@ -13,7 +13,7 @@ const makeSut = (timestamp = new Date()): SutTypes => {
   return { sut, cacheStore }
 }
 
-describe('LocalSavePurchases', () => {
+describe('LocalLoadSavePurchase', () => {
   test('Should not delete or insert cache on sut.init', () => {
     const { cacheStore } = makeSut()
     expect(cacheStore.actions).toEqual([])
