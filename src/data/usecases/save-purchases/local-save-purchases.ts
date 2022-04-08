@@ -8,8 +8,7 @@ export class LocalSavePurchase implements SavePurchases {
   ) {}
 
   async save (purchases: SavePurchases.Params[]): Promise<void> {
-    this.cacheStore.delete('purchases')
-    this.cacheStore.insert('purchases', {
+    this.cacheStore.replace('purchases', {
       timestamp: this.timestamp,
       value: purchases
     })
